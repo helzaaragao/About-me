@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="icon" type="image/svg+xml" href="./assets/homeIcon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>Helza Aragão | Portfólio Pessoal</title>
+</head>
+<body>
+     <!-- Explicar meu código através de comentários, sem exageros -->
+       <!-- Hospedagem do GitPages testar para ver se vai de boa -->
+        <!-- Entrega de atividade |Modelo de entrega - ver passo a passo no relatório -->
+    <!-- Header com links internos, em que criei o conteúdo em uma só página -->
+    <header>
+        <h1>Helza Aragão</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobreMim">Sobre mim</a></li>
+                <li><a href="#formacao">Formação Educacional</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main = onde ficará todo meu conteúdo da página -->
+    <main>
+        <section class="sobre">
+            <h2 id="sobreMim">Sobre mim</h2>
+            <article>
+                 <!-- Utilizei a tag semântica picture para facilitar posicionar a imagem pelo css depois -->
+                <picture>
+                    <img src="./assets/fotoUsuario.png" alt="">
+                </picture>
+                <p> Sou a Helza Aragão, uma desenvolvedora front-end em ascensão, apaixonada por transformar ideias em interfaces interativas e funcionais. Minha principal ferramenta de trabalho é o React, e estou em busca de uma oportunidade de estágio para contribuir, aprender e crescer dentro de uma equipe inspiradora.🖥️<br>
+                Quando não estou codando, você me encontra imersa em mundos de fantasia através de livros como a série Trono de Vidro, ou descontraindo em partidas de Valorant, Minecraft e Peak com amigos. </p>
+            </article>
+        </section>
+        <section class="formacaoEdu">
+            <!-- Não coloquei uma class nessa div por ser de fácil acesso pelo css com a class pai"formacaoEdu" -->
+            <div>
+                <h3 id="formacao">Formação Educacional</h3>
+                <hr>
+            </div>
+            <p> Minha base técnica foi construída através de formações robustas, como o curso de React.JS pela Rocketseat e Certified Tech Developer pela Digital House, que me proporcionaram um conhecimento abrangente em desenvolvimento Front-end e uma visão sólida dos processos de Back-end. <br>
+            Atualmente, coloco esses conhecimentos em prática de uma forma muito significativa: atuo como Assistente de Turma na reprograma, uma ONG dedicada a inserir mulheres na tecnologia. Nesta posição, vou além do código, ajudando a fortalecer a próxima geração de talentos no setor.<br>
+            Para acompanhar as tendências globais da tecnologia, mantenho meu inglês em nível intermediário/avançado, com excelente capacidade de leitura e documentação. Estou em constante evolução para alcançar a fluência na conversação.<br> </p>
+        </section>
+        <section class="portfolio">
+            <div class="titulo">
+                <h3 id="portfolio">Portfólio</h3>
+                <hr>
+            </div>
+            <div class="conteudo">
+                <picture >
+                    <img src="./assets/desktop-portfolio.png" alt="">
+                </picture>
+                <button><a href="https://helzaaragao.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">Ver Projeto</a></button>
+                <!--noopener: Anular a conexão (window.opener) entre a nova janela e a janela do seu site. A nova página aberta não terá nenhum acesso ou controle sobre a sua página. noreferrer: Ocultar a informação de "referência". Normalmente, quando um usuário clica em um link, o site de destino recebe a URL da página de onde veio o clique (o "referrer"). O noreferrer impede que a página de destino saiba qual foi a URL do seu site que linkou para ela. -->
+            </div>
+        </section>
+        <section class="contato">
+            <div class="titulo">
+                <h3 id="contato">Contato</h3>
+                <hr>
+            </div>
+            <form>
+                <div>
+                    <label for="">Nome</label>
+                    <input type="text" placeholder="Escreva seu nome">
+                </div>
+                <div>
+                    <label for="">E-mail</label>
+                    <input type="email" placeholder="Escreva seu e-mail">
+                </div>
+                <div>
+                    <label for="">Escreva sua mensagem</label>
+                    <textarea name="mensagem" id="mensagem" placeholder="Escreva sua mensagem aqui"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
