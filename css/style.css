@@ -1,4 +1,4 @@
-/* Configurações gerais - para todos os componentes da tela */
+/* Configurações gerais para todos os componentes da tela que evitem códigos que precisam ser repetidos como font-family*/
 *{
     margin: 0;
     padding: 0;
@@ -61,13 +61,14 @@ header nav ul li a:hover{
    color: #D282A6;
 }
 
-/* Main */
+/* Main - Coloquei caracteristicas comuns a todos as tags de conteúdo que tem no html */
 main {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
     padding: 2rem;
 }
+
 /* Section(0) - Sobre mim */
 main .sobre {
     display: flex;
@@ -186,7 +187,7 @@ main .contato form div input {
 main .contato form div input::placeholder {
     color:  #3a3238ac;
 }
-
+/* Optei por utilizar o textarea para mensagem, pois é o tipo que eu mais vejo para esse contexto */
 main .contato form div textarea {
     height: 4.5rem;
     padding: 0.75rem;
